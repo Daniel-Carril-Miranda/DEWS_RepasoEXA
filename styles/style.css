@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "agbalumo";
+    src: url("/assets/fonts/Agbalumo-Regular.ttf") format("truetype");
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: agbalumo;
+    /*esto seria la ruta de tu imagen*/
+    background-image: url('/assets/images/art_hipster-wallpaper-1920x1080\ \(1\).jpg');
+    background-repeat: no-repeat; /* Sin esto lo que hace es repetir la imágen si es menor de 800 píxeles */
+    background-position: center center; /* Con estos la centra  */
+    background-attachment: fixed; /* Con estos la centra  */
+    background-size: cover; /* La deja fina fina */
+}
+h1{
+    text-decoration: underline; /* Subrayado */
+    opacity: 0.6; /* Opacidad */
+}
+h2{
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family:monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 47ch;
+    animation: typing 3.5s steps(46), blink .5s infinite step-end alternate; /* Los steps son el número de caracteres */
+    overflow: hidden;
+}
+@keyframes typing {
+    from {width: 0;}
+}
+@keyframes blink {
+    50% { border-color: transparent;}
+}
+/* Otro ejemplo de key */
+@keyframes moverImagen{
+    from{
+        transform: translateX(1000%); /*si lo quieres del reves
+        metes -100 aqui y abajo 1000%*/
+    }
+    to{
+        transform: translateX(-100);
+    }
+}
